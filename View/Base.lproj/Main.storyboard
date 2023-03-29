@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bK2-Kd-zQa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Llo-Zo-ldM">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -11,16 +11,16 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="myMarket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Kapıcı" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1PK-Dj-9Em"/>
+                    <navigationItem key="navigationItem" id="yJZ-sg-TmU"/>
                     <connections>
-                        <segue destination="Jca-fQ-dD0" kind="show" identifier="loginVC" id="t87-5S-wFM"/>
+                        <segue destination="BQZ-pq-Mih" kind="show" identifier="loginVC" id="2qd-Wz-iGg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -28,100 +28,104 @@
             <point key="canvasLocation" x="1063.3587786259541" y="3.5211267605633805"/>
         </scene>
         <!--Login View Controller-->
-        <scene sceneID="jN3-5b-vJi">
+        <scene sceneID="B8D-zR-8Jp">
             <objects>
-                <viewController id="Jca-fQ-dD0" customClass="LoginViewController" customModule="myMarket" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3fr-oX-aeW">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                <viewController id="BQZ-pq-Mih" customClass="LoginViewController" customModule="Kapıcı" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eTk-La-cXW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="uHg-xc-YbU"/>
+                        <viewLayoutGuide key="safeArea" id="yFJ-tX-luA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Kt2-Uh-8If"/>
+                    <navigationItem key="navigationItem" id="jtd-gV-URl"/>
                     <connections>
-                        <segue destination="d9c-4r-TGq" kind="show" identifier="SignUpVC" id="LW5-5Q-VHE"/>
-                        <segue destination="hSM-2k-PGF" kind="show" identifier="normalBasketViewController" id="GAb-Qb-9Xe"/>
+                        <segue destination="aFS-Iy-npe" kind="show" identifier="signupVC" id="rax-qj-4DN"/>
+                        <segue destination="DQn-xA-aEe" kind="show" identifier="loginToBasketVC" id="yj6-W2-JrT"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZC2-eR-h3X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zBO-Ix-o9I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1811" y="4"/>
+            <point key="canvasLocation" x="1784" y="5"/>
         </scene>
         <!--SignUP View Controller-->
-        <scene sceneID="fjj-WK-Pav">
+        <scene sceneID="A4X-5s-wzn">
             <objects>
-                <viewController id="d9c-4r-TGq" customClass="SignUPViewController" customModule="myMarket" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Kfo-3E-ZDE">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                <viewController id="aFS-Iy-npe" customClass="SignUPViewController" customModule="Kapıcı" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xhB-0c-bgW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="ycF-Xn-r9p"/>
+                        <viewLayoutGuide key="safeArea" id="W9a-g4-2Rb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="KAl-1w-bBE"/>
+                    <navigationItem key="navigationItem" id="qmg-8Z-Ucc"/>
                     <connections>
-                        <segue destination="hSM-2k-PGF" kind="show" identifier="basketVC" id="zjw-ec-LOO"/>
+                        <segue destination="BQZ-pq-Mih" kind="show" identifier="signUpToLoginVC" id="Aep-NC-v1n"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="X5K-qH-QgQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BWs-p1-OQw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2561" y="5"/>
+            <point key="canvasLocation" x="2539" y="6"/>
         </scene>
         <!--Basket View Controller-->
-        <scene sceneID="5AV-D3-px3">
+        <scene sceneID="k7m-X3-zjC">
             <objects>
-                <viewController id="hSM-2k-PGF" customClass="BasketViewController" customModule="myMarket" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="J7g-Rv-usr">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                <viewController id="DQn-xA-aEe" customClass="BasketViewController" customModule="Kapıcı" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xTy-RU-yNA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="BRn-3g-3Wd"/>
+                        <viewLayoutGuide key="safeArea" id="4MW-pd-XUj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="sG9-ih-FOq"/>
+                    <navigationItem key="navigationItem" id="Jpd-hc-RyW"/>
                     <connections>
-                        <segue destination="ukL-gx-wE4" kind="show" identifier="creditCardVC" id="qeK-r7-vf6"/>
+                        <segue destination="qoC-eI-trm" kind="show" identifier="creditcardVC" id="DrG-Fe-Fe2"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yTu-GU-Cl1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fsy-14-7Dv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3344" y="22"/>
+            <point key="canvasLocation" x="3288" y="11"/>
         </scene>
         <!--Credit Card View Controller-->
-        <scene sceneID="C9Q-Cx-ySI">
+        <scene sceneID="F87-2W-xog">
             <objects>
-                <viewController id="ukL-gx-wE4" customClass="CreditCardViewController" customModule="myMarket" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="BT0-yB-i8Y">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                <viewController id="qoC-eI-trm" customClass="CreditCardViewController" customModule="Kapıcı" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lfe-1J-KJ0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="xZU-en-c3e"/>
+                        <viewLayoutGuide key="safeArea" id="Dy9-0d-rMe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="h1V-rt-ROV"/>
+                    <navigationItem key="navigationItem" id="HgJ-5z-c4b"/>
+                    <connections>
+                        <segue destination="DQn-xA-aEe" kind="show" identifier="creditCardToBasketVC" id="dMR-iX-bzH"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fwG-cj-l1k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KBv-Dl-1wV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4163" y="22"/>
+            <point key="canvasLocation" x="4084" y="-11"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="yQE-Yp-eeU">
+        <scene sceneID="5gH-iI-s5S">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bK2-Kd-zQa" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Llo-Zo-ldM" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IAJ-GQ-hTJ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uaK-Lh-O6j">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Qgv-im-Eka"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9tr-Ek-m83"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SAX-99-5fX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qwN-EM-wFD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.64122137404578" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="GAb-Qb-9Xe"/>
+        <segue reference="dMR-iX-bzH"/>
+        <segue reference="Aep-NC-v1n"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

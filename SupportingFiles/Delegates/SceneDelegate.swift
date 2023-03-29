@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  myMarket
+//  Kapıcı
 //
 //  Created by kerem on 29.03.2023.
 //

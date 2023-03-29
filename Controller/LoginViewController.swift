@@ -31,9 +31,17 @@ class LoginViewController: UIViewController {
     
     let loginButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Login", for: .normal)
+        button.setTitle("Giris Yap", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
+        return button
+    }()
+    
+    let saveButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Kayıt Ol", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(saveButtonTapped), for: .touchUpInside)
         return button
     }()
     
@@ -45,6 +53,7 @@ class LoginViewController: UIViewController {
         view.addSubview(usernameTextField)
         view.addSubview(passwordTextField)
         view.addSubview(loginButton)
+        view.addSubview(saveButton)
         
         
         NSLayoutConstraint.activate([
@@ -61,15 +70,25 @@ class LoginViewController: UIViewController {
             loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 50),
             loginButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
             loginButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
-            loginButton.heightAnchor.constraint(equalToConstant: 50)
+            loginButton.heightAnchor.constraint(equalToConstant: 50),
+            
+            
+            saveButton.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 10),
+            saveButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
+            saveButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
+            saveButton.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
   
     
     @objc func loginButtonTapped(){
-        performSegue(withIdentifier: "SignUpVC", sender: self)
+        
+        performSegue(withIdentifier: "loginToBasketVC", sender: self)
     }
     
+    @objc func saveButtonTapped(){
+        performSegue(withIdentifier: "signupVC", sender: self)
+    }
     
 
 

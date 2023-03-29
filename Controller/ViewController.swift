@@ -53,11 +53,11 @@ class ViewController: UIViewController {
         view.addSubview(imageView)
         view.addSubview(textlabel)
         
-        NSLayoutConstraint.activate([
-            loginButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 75),
-            loginButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 250),
-            loginButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
-            loginButton.heightAnchor.constraint(equalToConstant: 50),
+            NSLayoutConstraint.activate([
+                loginButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 75),
+                loginButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 250),
+                loginButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
+                loginButton.heightAnchor.constraint(equalToConstant: 50),
 
             imageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 150),
             imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25),
@@ -83,4 +83,3 @@ class ViewController: UIViewController {
     
     
 }
-
