@@ -9,4 +9,5 @@ bir tane kredi karı bilgilerinin girildiği ödeme ekranı içerir.
 
 -------------
 
-![Simulator Screen Recording - iPhone 14 Pro - 2023-03-29 at 21 45 06](https://user-images.githubusercontent.com/110934008/228637510-0e1c3319-e4bb-412e-8e38-e025786c5659.gif)
+
+![Simulator Screen Recording - iPhone 14 Pro - 2023-03-30 at 02 46 45](https://user-images.githubusercontent.com/110934008/228692395-b7677146-f5ab-4d6c-904c-c985a770b756.gif)
