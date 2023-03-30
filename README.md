@@ -1,4 +1,4 @@
-# Kapici
+# Kapıcı
  
 * Kapici uygulaması apartman sakinlerinin kendi kapıcıları ve marketleri ile iletişim kurmasını sağlayan bir uygulamadır.
 * bir tane ana karşılama ekranı 
